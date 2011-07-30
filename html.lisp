@@ -36,4 +36,7 @@
   (let ((*TOP* "<!DOCTYPE HTML>"))
     (xml sexp)))
 
+(do-external-symbols (sym :xml)
+  (export sym))
+
 (provide :html)
